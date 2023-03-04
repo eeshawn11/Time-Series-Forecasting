@@ -1,4 +1,4 @@
-# Time series forecasting with Prophet
+# Time Series Forecasting with Prophet
 
 ## Introduction
 
