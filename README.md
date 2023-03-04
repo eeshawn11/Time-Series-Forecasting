@@ -1,5 +1,7 @@
 # Time Series Forecasting with Prophet
 
+[![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/eeshawn/time-series-forecasting-with-prophet)
+
 ## Introduction
 
 Singapore has seen much progress in the energy sector, transitioning from the use of oil to natural gas over the past decades and also gradually introducing other alternative sustainable energy sources such as solar. The effects of climate change have become more pronounced and could severely impact our small island state if kept unchecked. With the target of zero net emissions by 2050, the energy sector needs to reduce emissions while ensuring supply keeps pace with the growing demand.
