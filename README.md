@@ -12,6 +12,8 @@ This creates a need for an accurate forecasting model that can accurately predic
 
 Data for this project is scraped from the [Energy Market Authority](https://www.ema.gov.sg/index.aspx) of Singapore statistics for half-hourly system demand data and consolidated into a [dataset](https://www.kaggle.com/datasets/eeshawn/half-hourly-electrical-demand-in-singapore).
 
+> If you would like to try your own scraping from the website, I have included the [ema_scraper](/ema_scraper.py) script. In my case I worked with ChromeDriver, but feel free to change to a different WebDriver of choice by modifying the script.
+
 ## Data Dictionary
 
 | Column | Type | Description |
