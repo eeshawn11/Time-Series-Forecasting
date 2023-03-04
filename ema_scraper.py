@@ -12,7 +12,7 @@ def retrieve_files(
             page: str="https://www.ema.gov.sg/statistic.aspx?sta_sid=20140826Y84sgBebjwKV"
         ):
     """
-    Helper function using Selenium to scrape through the EMA website and download the required files to save_directory.
+    Helper function using Selenium and ChromeDriver to scrape through the EMA website and download the required files to save_directory.
     Based on the specified years and months, the scraper will download files matching filetype.
 
     Return
