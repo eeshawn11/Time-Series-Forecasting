@@ -5,10 +5,10 @@ from selenium.webdriver.support.ui import Select
 import time
 
 def retrieve_files(
-            save_directory: str,
             years: list[str],
             months: list[str],
-            filetype: list[str],
+            filetype: list[str]=["xls", "xlsx"],
+            save_directory: str=os.path.join(os.getcwd(), "data"),
             page: str="https://www.ema.gov.sg/statistic.aspx?sta_sid=20140826Y84sgBebjwKV"
         ):
     """
@@ -18,6 +18,7 @@ def retrieve_files(
     Return
         Dictionary of files that did not download successfully.
     """
+    print(f"Downloading to {save_directory}")
     chrome_options = webdriver.ChromeOptions()
     prefs = {
         "download.default_directory" : save_directory,
@@ -66,4 +67,4 @@ def retrieve_files(
     return failed
 
 if __name__ == "__main__":
-    failed_files = retrieve_files(os.getcwd(), years=["2022"], months=["Dec"], filetype=["xls", "xlsx"])
+    failed_files = retrieve_files(years=["2022"], months=["Dec"], filetype=["xls", "xlsx"])
